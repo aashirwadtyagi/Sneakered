@@ -1,0 +1,190 @@
+body{
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px;
+}/*used for navbar items*/
+
+.navbartop{
+    display: flex;/*used to make items horizonatally*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Search{
+    display: flex;
+    align-items: center;
+    background-color: grey;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchitem{
+    background-color: transparent;
+    border: none;
+}
+
+.searchitem::placeholder{
+    color: lightgray;
+}
+
+.limitedOffer{
+    font-size: 20;
+    border-bottom: 2px;
+}
+
+.navbarbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400; ;
+}
+
+.slider{
+    background-image: url("https://images.unsplash.com/photo-1531685250784-7569952593d2?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    /*clip-path: polygon(6% 0, 95% 0, 100% 100%, 0% 100%);*/
+    overflow: hidden;
+}
+
+.sliderwrappers{
+    display: flex;
+    width: 500vw;
+    transition: all 1s ease-in-out;
+}
+
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderimg{
+    z-index: 1;
+}
+
+.slidebg{
+    width: 750;
+    height: 750;
+    border-radius: 50%;
+    background: green;
+    position: absolute;
+}
+
+.sliderTitle{
+    position:absolute;
+    top:0%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 500;
+    text-align: center;
+    z-index: 1;
+}
+
+.sliderprice{
+    position:absolute;
+    top:0%;
+    left: 10%;
+    font-size: 40px;
+    font-weight: 300;
+    text-align: center;
+    border: 2px solid gray;
+}
+
+.buybutton{
+    z-index: 1;
+    left: 10%;
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    border: 2px solid gray;
+    background: white;
+    cursor: pointer;
+}
+
+.buybutton:hover{
+    background: #000;
+    color: white;
+}
+
+.slideritem:nth-child(1) .slidebg{
+    background: rgb(77, 77, 77);
+}
+
+.slideritem:nth-child(2) .slidebg{
+    background: rgb(7, 243, 50);
+}
+
+.slideritem:nth-child(3) .slidebg{
+    background: rgb(7, 186, 251);
+}
+
+.slideritem:nth-child(4) .slidebg{
+    background: rgb(249, 11, 221);
+}
+
+.slideritem:nth-child(5) .slidebg{
+    background: rgb(158, 6, 253);
+}
+
+
+.slideritem:nth-child(1) .sliderprice{
+    background: rgb(77, 77, 77);
+}
+
+.slideritem:nth-child(2) .sliderprice{
+    background: rgb(7, 243, 50);
+}
+
+.slideritem:nth-child(3) .sliderprice{
+    background: rgb(7, 186, 251);
+}
+
+.slideritem:nth-child(4) .sliderprice{
+    background: rgb(249, 11, 221);
+}
+
+.slideritem:nth-child(5) .sliderprice{
+    background: rgb(158, 6, 253);
+}
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featureimg{
+    width: 50px;
+    height: 50px;
+}
+
+.featuretitle{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+.featuredescription{
+    color: black;
+    width: 50%;
+    height: 100px;
+}
